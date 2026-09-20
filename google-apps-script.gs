@@ -1,5 +1,5 @@
 /**
- * Backend de Google Apps Script para Don Luchito.
+ * Backend de Google Apps Script para Rustikas.
  *
  * 1. Abre script.google.com y crea un proyecto nuevo.
  * 2. Pega este archivo y ejecuta inicializarHojas una sola vez.
@@ -120,5 +120,5 @@ function doGet(event) {
     }, event.parameter.callback);
   }
 
-  return respuesta_({ ok: true, service: 'Don Luchito Sheets API' });
+  return respuesta_({ ok: true, service: 'Rustikas Sheets API' });
 }

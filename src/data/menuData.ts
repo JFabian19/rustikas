@@ -15,7 +15,7 @@ export interface Category {
 
 const item = (nombre: string, precio: string, descripcion?: string, imagen?: string): Dish => ({ nombre, precio, descripcion, imagen });
 
-// Carta transcrita de las piezas gráficas proporcionadas por Don Luchito.
+// Carta transcrita de las piezas gráficas proporcionadas por Rustikas.
 export const DEFAULT_MENU_DATA: Category[] = [
   { id: 'menu-brasa', nombre: 'Menú brasa', destacada: true, horario: 'Disponible de 12:00 p. m. a 5:00 p. m.', items: [
     item('1/8 pollo a la brasa', 'S/ 10.00', 'Papas + chaufa + refresco + aguadito', '/menu-brasa-1-8-pollo.webp'),

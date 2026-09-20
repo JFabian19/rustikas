@@ -55,7 +55,7 @@ interface MenuPayload {
 const fetchMenuFromWebApp = (): Promise<MenuPayload | null> => new Promise((resolve) => {
   if (!WEB_APP_URL) { resolve(null); return; }
 
-  const callbackName = `donLuchitoMenu_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+  const callbackName = `rustikasMenu_${Date.now()}_${Math.random().toString(36).slice(2)}`;
   const script = document.createElement('script');
   const windowWithCallback = window as unknown as Record<string, (payload: MenuPayload) => void>;
   const cleanup = () => {
