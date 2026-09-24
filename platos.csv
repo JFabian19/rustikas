@@ -1,56 +1,22 @@
 categoria_id,nombre,descripcion,precio,url_imagen,orden
-menu-brasa,1/8 pollo a la brasa,Papas + chaufa + refresco + aguadito,10.00,/menu-brasa-1-8-pollo.webp,1
-pollos-a-la-brasa,Octavo p/brasa,1/8 pollo + papas + ensalada + cremas,8.50,/pollo-brasa-octavo.webp,1
-pollos-a-la-brasa,Cuarto p/brasa,1/4 pollo + papas + ensalada + cremas,10.00,/pollo-brasa-cuarto.webp,2
-pollos-a-la-brasa,Medio p/brasa,1/2 pollo + papas + ensalada + cremas,20.00,/pollo-brasa-medio.webp,3
-pollos-a-la-brasa,Entero p/brasa,1 pollo + papas + ensalada + cremas,40.00,/pollo-brasa-entero.webp,4
-pollos-a-la-brasa,Octavo mostrito,1/8 pollo + papas + chaufa + ensalada + cremas,12.00,/pollo-mostrito-octavo.webp,5
-pollos-a-la-brasa,Cuarto mostro,1/4 pollo + papas + chaufa + ensalada + cremas,14.00,/pollo-mostrito-cuarto.webp,6
-combos-personales,Octavo p/brasa,Papas + Pepsi 750 ml + ensalada + cremas,11.50,/combo-octavo-pepsi.webp,1
-combos-personales,Cuarto p/brasa,Papas + Pepsi 750 ml + ensalada + cremas,13.00,/combo-cuarto-pepsi.webp,2
-combos-personales,Octavo mostrito,Papas + chaufa + Pepsi 750 ml + ensalada + cremas,15.00,/combo-octavo-mostrito-pepsi.webp,3
-combos-personales,Cuarto mostro,Papas + chaufa + Pepsi 750 ml + ensalada + cremas,17.00,/combo-cuarto-mostrito-pepsi.webp,4
-combos-personales,Octavo + chicha,Papas + 1/2 L de chicha + ensalada + cremas,12.50,/combo-octavo-chicha.webp,5
-combos-personales,Cuarto + chicha,Papas + 1/2 L de chicha + ensalada + cremas,14.00,/combo-cuarto-chicha.webp,6
-combos-familiares,Combo para dos,1/2 pollo a la brasa + papas + Pepsi 1.5 L + ensalada + cremas,24.50,/combo-para-dos.webp,1
-combos-familiares,Combo Pepsi,1/2 pollo a la brasa + papas + Pepsi 1.5 L + ensalada + cremas,25.50,/combo-pepsi-familiar.webp,2
-combos-familiares,Dúo chaufereo,1/2 pollo a la brasa + papas + chaufa + ensalada + cremas,30.00,/duo-chaufereo.webp,3
-combos-familiares,Dúo tradicional,1/2 pollo a la brasa + papas + chicha morada 1 L + ensalada + cremas,28.00,/duo-tradicional.webp,4
-combos-familiares,Combo clásico,1 pollo a la brasa + papas + Inca o Coca Cola 1.5 L + ensalada + cremas,46.00,/combo-clasico.webp,5
-combos-familiares,Combo chaufereo,1 pollo a la brasa + papas + chaufa + ensalada + cremas,50.00,/combo-chaufereo.webp,6
-combos-familiares,Combo tradicional,1 pollo a la brasa + chicha morada 1 L + papas + ensalada + cremas,47.00,/combo-tradicional.webp,7
-combos-familiares,A la brasa con yapa,1 pollo a la brasa + 1/4 de pollo + papas + ensalada + cremas,47.00,/brasa-con-yapa.webp,8
-combos-familiares,Familiar peruano,1 pollo a la brasa + Inca o Coca Cola 3 L + papas + ensalada + cremas,50.00,/familiar-peruano.webp,9
-combos-familiares,Familiar Pepsi,1 pollo a la brasa + Pepsi 1.5 L + papas + ensalada + cremas,53.00,/familiar-pepsi.webp,10
-combos-familiares,Mega familiar,1 pollo a la brasa + Inca o Coca Cola 1.5 L + 1/4 de pollo + papas + ensalada + cremas,56.00,/mega-familiar.webp,11
-chifa,Arroz chaufa de pollo,,12.00,/chaufa-pollo.webp,1
-chifa,Aeropuerto,,14.00,/aeropuerto.webp,2
-chifa,Tallarín chifa,,16.00,/tallarin-chifa.webp,3
-chifa,Salvaje,,15.00,/salvaje.webp,4
-chifa,Combinado,,18.00,/combinado.webp,5
-extras,Porción de papas fritas,,11.00,/papas-fritas.webp,1
-extras,Media porción de papas fritas,,7.00,/media-papas-fritas.webp,2
-extras,Porción de ensalada,,6.00,/ensalada.webp,3
-extras,Media porción de ensalada,,3.00,/media-ensalada.webp,4
-extras,Porción de chaufa,,4.00,/porcion-chaufa.webp,5
-bebidas,Inca o Coca Cola personal,,2.50,/bebida-personal.webp,1
-bebidas,Inca o Coca Cola 600 ml,,4.00,/bebida-inca-600.webp,2
-bebidas,Inca o Coca Cola 1 L,,7.00,/bebida-inca-1l.webp,3
-bebidas,Inca o Coca Cola 1.5 L,,9.00,/bebida-inca-1-5l.webp,4
-bebidas,Inca o Coca Cola 2.25 L,,11.00,/bebida-inca-2-25l.webp,5
-bebidas,Inca o Coca Cola 3 L,,14.00,/bebida-inca-3l.webp,6
-bebidas,Gordita,,5.00,/bebida-gordita.webp,7
-bebidas,Pepsi 750 ml,,4.00,/bebida-pepsi-750.webp,8
-bebidas,Pepsi 1 L,,5.50,/bebida-pepsi-1l.webp,9
-bebidas,Pepsi 1.5 L,,6.50,/bebida-pepsi-1-5l.webp,10
-bebidas,Pepsi 2 L,,7.50,/bebida-pepsi-2l.webp,11
-bebidas,Pepsi 3 L,,11.00,/bebida-pepsi-3l.webp,12
-bebidas,Agua Cielo o San Luis,,2.00,/bebida-agua.webp,13
-bebidas,Cerveza Pilsen,,8.00,/bebida-pilsen.webp,14
-bebidas,Cusqueña trigo o negra,,10.00,/bebida-cusquena.webp,15
-bebidas,Concordia 1.5 L,,5.50,/bebida-concordia.webp,16
-bebidas,"Pepsi, Concordia o 7up 355 ml",,1.50,/bebida-mix-355.webp,17
-bebidas,Gatorade,,3.00,/bebida-gatorade.webp,18
-bebidas,Chicha o maracuyá 1 L,,10.00,/bebida-chicha-maracuya-1l.webp,19
-bebidas,Chicha o maracuyá 500 ml,,6.00,/bebida-chicha-maracuya-500.webp,20
-bebidas,"Infusiones (té, anís y manzanilla)",,2.50,/bebida-infusiones.webp,21
+menu-brasa,Chifa + 1/8 pollo,Chifa + 1/8 pollo + refresco + caldito,10.00,/menu-brasa-1-8-pollo.webp,1
+menu-brasa,Chaufa,Chaufa + refresco + caldito,10.00,/chaufa-pollo.webp,2
+menu-brasa,Mostrito,Mostrito + refresco + caldito,10.00,/pollo-mostrito-octavo.webp,3
+pollos,1/8 de pollo,1/8 pollo + papas + cremas + ensalada + chicha,10.00,/combo-octavo-chicha.webp,1
+pollos,1/4 de pollo,1/4 pollo + papas + cremas + ensalada + chicha,15.00,/combo-cuarto-chicha.webp,2
+pollos,1/2 pollo,1/2 pollo + papas + cremas + ensalada + chicha,35.00,/pollo-brasa-medio.webp,3
+pollos,1 pollo,1 pollo + ensalada + papas + cremas + chicha,60.00,/pollo-brasa-entero.webp,4
+mostros,Mostrito brasa,1/8 pollo + chaufa + ensalada + papas + cremas + chicha,10.00,/pollo-mostrito-octavo.webp,1
+mostros,Mostrito broaster,1/8 pollo broaster + chaufa + papas + ensalada + cremas + chicha,12.00,/mostrito-broaster.webp,2
+mostros,Mostrito pollo a la plancha,Pechuga + chaufa + papas + ensalada + chicha,10.00,/mostrito-plancha.webp,3
+mostros,Mostrito a la cubana,1/8 pollo + huevo frito + plátano frito + chaufa + papas + ensalada + cremas + chicha,14.00,/mostrito-cubana.webp,4
+mostrazos,Mostrazo brasa,1/4 pollo + chaufa + ensalada + papas + cremas + chicha,17.00,/pollo-mostrito-cuarto.webp,1
+mostrazos,Mostrazo broaster,1/4 pollo broaster + chaufa + papas + ensalada + cremas + chicha,19.00,/mostrazo-broaster.webp,2
+mostrazos,Mostrazo pollo a la plancha,Pechuga + chaufa + papas + ensalada + chicha,15.00,/mostrazo-plancha.webp,3
+mostrazos,Mostrazo a la cubana,1/4 pollo + huevo frito + plátano frito + chaufa + papas + ensalada + cremas + chicha,20.00,/mostrazo-cubana.webp,4
+chifa,Chaufa de pollo,Chaufa de pollo + cremas + chicha,10.00,/chaufa-pollo.webp,1
+chifa,Chaufa de chancho,Chaufa de chancho + cremas + chicha,12.00,/chaufa-chancho.webp,2
+chifa,Chaufa de res,Chaufa de res + cremas + chicha,12.00,/chaufa-res.webp,3
+chifa,Aeropuerto simple,Aeropuerto simple + cremas + chicha,10.00,/aeropuerto.webp,4
+chifa,Aeropuerto especial,Aeropuerto especial + cremas + chicha,13.00,/aeropuerto-especial.webp,5
+chifa,Combinado simple,Combinado simple + cremas + chicha,12.00,/combinado.webp,6

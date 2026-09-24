@@ -1,8 +1,9 @@
 import Papa from 'papaparse';
 import type { Category, Dish } from '../data/menuData';
 
-// Coloca aquí tu ID de Google Sheets (lo encuentras en la URL de tu hoja de cálculo)
-export const SHEET_ID = '1QEC28ClYzYxXjuFoRlrCYZWkRbn1ZZK0QlEzTp4CtHg';
+// Coloca aquí tu ID de Google Sheets si deseas sincronizar desde una hoja de cálculo actualizada.
+// Si se deja vacío (''), se utilizará la carta local configurada en DEFAULT_MENU_DATA.
+export const SHEET_ID = '';
 
 export interface SheetDish {
   categoria_id: string;

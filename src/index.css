@@ -133,7 +133,7 @@ button { font: inherit; cursor: pointer; }
 .dish-photo-placeholder { height: 122px; color: #b37649; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; border-bottom: 1px dashed #d6aa78; background: repeating-linear-gradient(45deg, #f8ead2 0, #f8ead2 7px, #fff5e4 7px, #fff5e4 14px); font: 800 10px/1.05 'Barlow Condensed', sans-serif; letter-spacing: .12em; text-align: center; }
 .dish-image { width: 100%; height: auto; aspect-ratio: 1 / 1; display: block; object-fit: cover; object-position: center; border-bottom: 1px solid #e6cfad; background: #2a140d; }
 .dish-image[src$="pollo-brasa-entero.webp"] { object-fit: contain; padding: 3px; }
-.promotion-section .dish-grid { grid-template-columns: 1fr; }
+.promotion-section .dish-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .dish-card.promotion-card { min-height: 0; display: flex; border-color: #f4bc42; box-shadow: 0 7px 16px rgba(26, 5, 2, .3); }
 .promotion-dish-image { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; object-fit: cover; object-position: center; border-bottom: 1px solid #f4bc42; }
 .promotion-card .dish-copy { min-height: 144px; padding: 17px 16px; }
@@ -147,6 +147,18 @@ button { font: inherit; cursor: pointer; }
 .dish-bottom strong { color: var(--ember); font: 400 23px/1 'Anton', sans-serif; letter-spacing: .01em; white-space: nowrap; }
 .dish-bottom button { width: 31px; height: 31px; border: 0; color: white; background: var(--ember); display: grid; place-items: center; border-radius: 50%; box-shadow: 0 3px 0 var(--ember-dark); transition: .2s; }
 .dish-bottom button:hover { background: var(--orange); box-shadow: 0 3px 0 #bd4a18; }
+
+.empty-category-card {
+  padding: 30px 18px;
+  text-align: center;
+  border: 1.5px dashed #dfc6a6;
+  border-radius: 9px;
+  background: rgba(255, 251, 243, 0.85);
+  color: #8c6e58;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+}
 
 .site-footer { padding: 35px 24px 38px; color: white; text-align: center; background: radial-gradient(ellipse at top, #482113, #180e0a 62%); border-top: 4px solid var(--ember); }
 .site-footer img { display: block; width: 110px; height: 110px; object-fit: contain; margin: 0 auto 10px; background: transparent; filter: drop-shadow(0 4px 10px rgba(0,0,0,.5)); }
@@ -193,12 +205,17 @@ button { font: inherit; cursor: pointer; }
 .config-panel, .checkout-panel { width: min(510px, 100%); max-height: calc(100dvh - 28px); overflow: auto; position: relative; padding: 32px 23px 23px; border: 3px solid #ffd294; border-radius: 11px; background: #fff9ed; box-shadow: 0 30px 60px rgba(0,0,0,.32); }
 .config-panel h2, .checkout-panel h2 { margin: 5px 40px 7px 0; color: var(--ink); font: 400 29px/.98 'Anton', sans-serif; text-transform: uppercase; }
 .config-intro { margin: 0 0 20px; color: #705c50; font-size: 13px; line-height: 1.45; }
+.config-section { margin-bottom: 18px; }
 .config-label-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 9px; color: var(--ink); font: 800 15px/1 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .04em; }
-.select-all { border: 0; padding: 0; color: var(--ember); background: none; font: 800 12px/1 'DM Sans', sans-serif; text-transform: none; }
-.cream-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 20px; }
-.cream-option { min-height: 42px; display: flex; align-items: center; gap: 9px; padding: 10px; border: 1px solid #e6d2b5; border-radius: 5px; color: #705c50; background: white; font-size: 13px; font-weight: 700; transition: .16s; }
-.cream-option input { accent-color: var(--ember); width: 16px; height: 16px; }
-.cream-option.selected { color: #7e1715; background: #ffefdc; border-color: var(--ember); box-shadow: inset 0 0 0 1px var(--ember); }
+.config-label-sub { font-size: 11px; text-transform: none; color: #a7866e; font-weight: 600; font-family: 'DM Sans', sans-serif; }
+.select-all { border: 0; padding: 0; color: var(--ember); background: none; font: 800 12px/1 'DM Sans', sans-serif; text-transform: none; cursor: pointer; }
+.select-all:hover { text-decoration: underline; }
+.presa-options, .cream-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.presa-option, .cream-option { min-height: 42px; display: flex; align-items: center; gap: 9px; padding: 10px; border: 1px solid #e6d2b5; border-radius: 5px; color: #705c50; background: white; font-size: 13px; font-weight: 700; transition: .16s; cursor: pointer; user-select: none; }
+.presa-option:hover, .cream-option:hover { border-color: #df9e38; }
+.presa-option input, .cream-option input { accent-color: var(--ember); width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
+.presa-option.selected, .cream-option.selected { color: #7e1715; background: #ffefdc; border-color: var(--ember); box-shadow: inset 0 0 0 1px var(--ember); }
+.presa-option:last-child:nth-child(odd) { grid-column: span 2; }
 .note-field { display: grid; gap: 8px; margin-bottom: 20px; color: var(--ink); font: 800 15px/1 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .04em; }
 .note-field small { color: #a7866e; font: 600 11px/1 'DM Sans', sans-serif; text-transform: none; letter-spacing: 0; }
 .note-field textarea, .checkout-fields input { width: 100%; border: 1px solid #dfc9aa; border-radius: 5px; color: var(--ink); background: white; outline-color: var(--ember); font: 14px/1.35 'DM Sans', sans-serif; }
