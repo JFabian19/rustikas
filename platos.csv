@@ -1,22 +1,22 @@
 categoria_id,nombre,descripcion,precio,url_imagen,orden
-menu-brasa,Chifa + 1/8 pollo,Chifa + 1/8 pollo + refresco + caldito,10.00,/menu-brasa-1-8-pollo.webp,1
-menu-brasa,Chaufa,Chaufa + refresco + caldito,10.00,/chaufa-pollo.webp,2
-menu-brasa,Mostrito,Mostrito + refresco + caldito,10.00,/pollo-mostrito-octavo.webp,3
+menu-brasa,Chifa + 1/8 pollo,Chifa + 1/8 pollo + refresco + caldito,10.00,/menu-brasa-1-8-pollo-completo.webp,1
+menu-brasa,Chaufa,Chaufa + refresco + caldito,10.00,/menu-chaufa-completo.webp,2
+menu-brasa,Mostrito,Mostrito + refresco + caldito,10.00,/menu-mostrito-completo.webp,3
 pollos,1/8 de pollo,1/8 pollo + papas + cremas + ensalada + chicha,10.00,/combo-octavo-chicha.webp,1
 pollos,1/4 de pollo,1/4 pollo + papas + cremas + ensalada + chicha,15.00,/combo-cuarto-chicha.webp,2
-pollos,1/2 pollo,1/2 pollo + papas + cremas + ensalada + chicha,35.00,/pollo-brasa-medio.webp,3
-pollos,1 pollo,1 pollo + ensalada + papas + cremas + chicha,60.00,/pollo-brasa-entero.webp,4
-mostros,Mostrito brasa,1/8 pollo + chaufa + ensalada + papas + cremas + chicha,10.00,/pollo-mostrito-octavo.webp,1
-mostros,Mostrito broaster,1/8 pollo broaster + chaufa + papas + ensalada + cremas + chicha,12.00,/mostrito-broaster.webp,2
+pollos,1/2 pollo,1/2 pollo + papas + cremas + ensalada + chicha,35.00,/pollo-brasa-medio-completo.webp,3
+pollos,1 pollo,1 pollo + ensalada + papas + cremas + chicha,60.00,/pollo-brasa-entero-completo.webp,4
+mostros,Mostrito brasa,1/8 pollo + chaufa + ensalada + papas + cremas + chicha,10.00,/pollo-mostrito-octavo-completo.webp,1
+mostros,Mostrito broaster,1/8 pollo broaster + chaufa + papas + ensalada + cremas + chicha,12.00,/mostrito-broaster-completo.webp,2
 mostros,Mostrito pollo a la plancha,Pechuga + chaufa + papas + ensalada + chicha,10.00,/mostrito-plancha.webp,3
 mostros,Mostrito a la cubana,1/8 pollo + huevo frito + plátano frito + chaufa + papas + ensalada + cremas + chicha,14.00,/mostrito-cubana.webp,4
-mostrazos,Mostrazo brasa,1/4 pollo + chaufa + ensalada + papas + cremas + chicha,17.00,/pollo-mostrito-cuarto.webp,1
-mostrazos,Mostrazo broaster,1/4 pollo broaster + chaufa + papas + ensalada + cremas + chicha,19.00,/mostrazo-broaster.webp,2
-mostrazos,Mostrazo pollo a la plancha,Pechuga + chaufa + papas + ensalada + chicha,15.00,/mostrazo-plancha.webp,3
+mostrazos,Mostrazo brasa,1/4 pollo + chaufa + ensalada + papas + cremas + chicha,17.00,/pollo-mostrito-cuarto-completo.webp,1
+mostrazos,Mostrazo broaster,1/4 pollo broaster + chaufa + papas + ensalada + cremas + chicha,19.00,/mostrazo-broaster-completo.webp,2
+mostrazos,Mostrazo pollo a la plancha,Pechuga + chaufa + papas + ensalada + chicha,15.00,/mostrazo-plancha-completo.webp,3
 mostrazos,Mostrazo a la cubana,1/4 pollo + huevo frito + plátano frito + chaufa + papas + ensalada + cremas + chicha,20.00,/mostrazo-cubana.webp,4
-chifa,Chaufa de pollo,Chaufa de pollo + cremas + chicha,10.00,/chaufa-pollo.webp,1
-chifa,Chaufa de chancho,Chaufa de chancho + cremas + chicha,12.00,/chaufa-chancho.webp,2
-chifa,Chaufa de res,Chaufa de res + cremas + chicha,12.00,/chaufa-res.webp,3
-chifa,Aeropuerto simple,Aeropuerto simple + cremas + chicha,10.00,/aeropuerto.webp,4
-chifa,Aeropuerto especial,Aeropuerto especial + cremas + chicha,13.00,/aeropuerto-especial.webp,5
-chifa,Combinado simple,Combinado simple + cremas + chicha,12.00,/combinado.webp,6
+chifa,Chaufa de pollo,Chaufa de pollo + cremas + chicha,10.00,/chaufa-pollo-completo.webp,1
+chifa,Chaufa de chancho,Chaufa de chancho + cremas + chicha,12.00,/chaufa-chancho-completo.webp,2
+chifa,Chaufa de res,Chaufa de res + cremas + chicha,12.00,/chaufa-res-completo.webp,3
+chifa,Aeropuerto simple,Aeropuerto simple + cremas + chicha,10.00,/aeropuerto-completo.webp,4
+chifa,Aeropuerto especial,Aeropuerto especial + cremas + chicha,13.00,/aeropuerto-especial-completo.webp,5
+chifa,Combinado simple,Combinado simple + cremas + chicha,12.00,/combinado-completo.webp,6
