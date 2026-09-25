@@ -8,11 +8,11 @@
  * 4. Copia la URL /exec en WEB_APP_URL de src/services/googleSheets.ts.
  */
 
-const SPREADSHEET_ID = '1QEC28ClYzYxXjuFoRlrCYZWkRbn1ZZK0QlEzTp4CtHg';
+const SPREADSHEET_ID = '1v5wmHAjEqOIje_-m-7f9cVrq20KYomHbesM5w2gYJnk';
 
 const HEADERS = {
-  categorias: ['id', 'nombre', 'destacada', 'horario', 'orden'],
-  platos: ['categoria_id', 'nombre', 'descripcion', 'precio', 'url_imagen', 'orden'],
+  categorias: ['Categoria'],
+  platos: ['Categoria', 'Plato', 'Descripcion', 'Precio', 'Imagen URL'],
   fidelizacion: ['id_cliente', 'nombre', 'telefono', 'correo', 'puntos', 'visitas', 'ultima_visita', 'fecha_registro', 'consentimiento'],
   resenas: ['id_resena', 'nombre', 'telefono', 'calificacion', 'comentario', 'fecha', 'publicada'],
 };
