@@ -13,7 +13,16 @@ export interface Category {
   items: Dish[];
 }
 
-const item = (nombre: string, precio: string, descripcion?: string, imagen?: string): Dish => ({ nombre, precio, descripcion, imagen });
+const localAsset = (path?: string) => path
+  ? `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+  : undefined;
+
+const item = (nombre: string, precio: string, descripcion?: string, imagen?: string): Dish => ({
+  nombre,
+  precio,
+  descripcion,
+  imagen: localAsset(imagen),
+});
 
 // Nueva carta de Rustikas
 export const DEFAULT_MENU_DATA: Category[] = [

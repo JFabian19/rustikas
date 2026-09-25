@@ -47,6 +47,12 @@ export const fetchSheetData = async <T>(sheetName: string): Promise<T[]> => {
 
 const isFeatured = (value?: string) => value?.trim().toUpperCase() === 'SI';
 const sortByOrder = <T extends { orden?: string }>(items: T[]) => [...items].sort((a, b) => Number(a.orden || 0) - Number(b.orden || 0));
+const resolveImageUrl = (url?: string) => {
+  const value = url?.trim();
+  if (!value) return undefined;
+  if (/^(?:https?:)?\/\//i.test(value) || value.startsWith('data:')) return value;
+  return `${import.meta.env.BASE_URL}${value.replace(/^\/+/, '')}`;
+};
 
 interface MenuPayload {
   categorias: SheetCategory[];
@@ -92,7 +98,7 @@ export const fetchMenuData = async (): Promise<Category[] | null> => {
           nombre: dish.nombre.trim(),
           descripcion: dish.descripcion?.trim() || undefined,
           precio: `S/ ${Number(dish.precio).toFixed(2)}`,
-          imagen: dish.url_imagen?.trim() || undefined,
+          imagen: resolveImageUrl(dish.url_imagen),
         }));
 
       return {
