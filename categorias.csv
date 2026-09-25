@@ -1,8 +1,9 @@
 id,nombre,destacada,horario,orden
-menu-brasa,Menú brasa,SI,Disponible de 12:00 p. m. a 5:00 p. m.,1
+menu-brasa,Menú brasa,SI,Solo dos veces a la semana,1
 pollos,Pollos,NO,,2
 mostros,Mostros,NO,,3
 mostrazos,Mostrazos,NO,,4
 combos,Combos,NO,,5
 chifa,Chifa,NO,,6
 extras,Extras,NO,,7
+bebidas,Bebidas,NO,,8

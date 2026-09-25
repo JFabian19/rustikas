@@ -128,15 +128,21 @@ button { font: inherit; cursor: pointer; }
 .promotion-section .category-heading p { color: #ffd969; }
 .promotion-section .heading-flame { color: #ffd969; }
 .promotion-schedule { margin-top: 6px; display: inline-flex; align-items: center; padding: 5px 8px; border-radius: 3px; color: #4a160c; background: #ffe17a; font: 800 11px/1 'Barlow Condensed', sans-serif; letter-spacing: .04em; text-transform: uppercase; }
-.dish-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 11px; align-items: start; }
-.dish-card { display: flex; flex-direction: column; overflow: hidden; min-height: 0; background: white; border: 1px solid #ebdcc6; border-radius: 7px; box-shadow: 0 6px 16px rgba(76,42,21,.09); }
-.dish-photo-placeholder { height: 122px; color: #b37649; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; border-bottom: 1px dashed #d6aa78; background: repeating-linear-gradient(45deg, #f8ead2 0, #f8ead2 7px, #fff5e4 7px, #fff5e4 14px); font: 800 10px/1.05 'Barlow Condensed', sans-serif; letter-spacing: .12em; text-align: center; }
-.dish-media { width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: #2a140d; border-bottom: 1px solid #e6cfad; }
-.dish-image, .promotion-dish-image { width: 100%; height: 100%; display: block; object-fit: contain; object-position: center; }
-.dish-image[src*="pollo-brasa-entero"] { padding: 3px; }
+.dish-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; align-items: start; }
+@media (min-width: 601px) {
+  .dish-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+}
+.dish-card { display: flex; flex-direction: column; overflow: hidden; min-height: 0; background: white; border: 1px solid #f1e5d4; border-radius: 7px; box-shadow: 0 4px 14px rgba(76,42,21,.08); }
+.dish-photo-placeholder { height: 122px; color: #b37649; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; background: repeating-linear-gradient(45deg, #f8ead2 0, #f8ead2 7px, #fff5e4 7px, #fff5e4 14px); font: 800 10px/1.05 'Barlow Condensed', sans-serif; letter-spacing: .12em; text-align: center; }
+.dish-media { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #ffffff; border: none; }
+.dish-media.dish-media-wide { aspect-ratio: 4 / 3; border: none; }
+.dish-image { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; border: none; }
+.dish-image-wide, .promotion-dish-image { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; border: none; }
+.dish-image[src*="pollo-brasa-entero"] { object-fit: contain; padding: 3px; }
+.category-section[id="category-bebidas"] .dish-image { object-fit: contain; padding: 6px; }
 .promotion-section .dish-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .dish-card.promotion-card { min-height: 0; display: flex; border-color: #f4bc42; box-shadow: 0 7px 16px rgba(26, 5, 2, .3); }
-.promotion-dish-media { aspect-ratio: 16 / 9; border-bottom-color: #f4bc42; }
+.promotion-dish-media { aspect-ratio: 16 / 9; border: none; }
 .promotion-card .dish-copy { min-height: 144px; padding: 17px 16px; }
 .promotion-card .dish-copy h3 { font-size: 23px; }
 .promotion-card .dish-copy p { font-size: 12px; line-height: 1.35; }
