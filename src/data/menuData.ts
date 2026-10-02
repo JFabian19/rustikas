@@ -70,7 +70,11 @@ export const DEFAULT_MENU_DATA: Category[] = [
   {
     id: 'combos',
     nombre: 'Combos',
-    items: [],
+    items: [
+      item('Combo personal', 'S/ 18.00', '1/4 de pollo + papas + chaufa + cremas + ensalada + gaseosa personal o chicha'),
+      item('Combo duo', 'S/ 40.00', 'Medio pollo + papas + ensalada + chaufa + cremas + gaseosa o chicha morada de 1 litro'),
+      item('Combo familiar', 'S/ 70.00', '1 pollo + papas + chaufa + ensalada + cremas + gaseosa o chicha 1.50 litros', '/combo-familiar-completo.webp'),
+    ],
   },
   {
     id: 'chifa',
@@ -87,7 +91,16 @@ export const DEFAULT_MENU_DATA: Category[] = [
   {
     id: 'extras',
     nombre: 'Extras',
-    items: [],
+    items: [
+      item('Caldo de gallina', 'S/ 10.00'),
+      item('Salchipapas simple', 'S/ 7.00'),
+      item('Salchipapas especial', 'S/ 10.00'),
+      item('Menudencia a la parrilla', 'S/ 12.00'),
+      item('Patitas fritas', 'S/ 10.00'),
+      item('Patitas broaster', 'S/ 12.00'),
+      item('Lomo saltado', 'S/ 14.00'),
+      item('Tallarin saltado', 'S/ 12.00'),
+    ],
   },
   {
     id: 'bebidas',
