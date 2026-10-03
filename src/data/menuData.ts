@@ -3,6 +3,7 @@ export interface Dish {
   descripcion?: string;
   imagen?: string;
   precio: string;
+  proximamente?: boolean;
 }
 
 export interface Category {
@@ -17,12 +18,26 @@ const localAsset = (path?: string) => path
   ? `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
   : undefined;
 
-const item = (nombre: string, precio: string, descripcion?: string, imagen?: string): Dish => ({
+const item = (nombre: string, precio: string, descripcion?: string, imagen?: string, proximamente?: boolean): Dish => ({
   nombre,
   precio,
   descripcion,
   imagen: localAsset(imagen),
+  proximamente,
 });
+
+export const isProximamente = (dish?: Partial<Dish>): boolean => {
+  if (dish?.proximamente) return true;
+  if (!dish?.nombre) return false;
+  const normalized = dish.nombre.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return (
+    normalized.includes('menudencia') ||
+    normalized.includes('patitas fritas') ||
+    normalized.includes('patitas broaster') ||
+    normalized.includes('parrillad') ||
+    normalized.includes('parrilla')
+  );
+};
 
 // Nueva carta de Rustikas
 export const DEFAULT_MENU_DATA: Category[] = [
@@ -71,8 +86,8 @@ export const DEFAULT_MENU_DATA: Category[] = [
     id: 'combos',
     nombre: 'Combos',
     items: [
-      item('Combo personal', 'S/ 18.00', '1/4 de pollo + papas + chaufa + cremas + ensalada + gaseosa personal o chicha'),
-      item('Combo duo', 'S/ 40.00', 'Medio pollo + papas + ensalada + chaufa + cremas + gaseosa o chicha morada de 1 litro'),
+      item('Combo personal', 'S/ 18.00', '1/4 de pollo + papas + chaufa + cremas + ensalada + gaseosa personal o chicha', '/combo-personal-completo.webp'),
+      item('Combo duo', 'S/ 40.00', 'Medio pollo + papas + ensalada + chaufa + cremas + gaseosa o chicha morada de 1 litro', '/combo-duo-completo.webp'),
       item('Combo familiar', 'S/ 70.00', '1 pollo + papas + chaufa + ensalada + cremas + gaseosa o chicha 1.50 litros', '/combo-familiar-completo.webp'),
     ],
   },
@@ -92,14 +107,14 @@ export const DEFAULT_MENU_DATA: Category[] = [
     id: 'extras',
     nombre: 'Extras',
     items: [
-      item('Caldo de gallina', 'S/ 10.00'),
-      item('Salchipapas simple', 'S/ 7.00'),
-      item('Salchipapas especial', 'S/ 10.00'),
-      item('Menudencia a la parrilla', 'S/ 12.00'),
-      item('Patitas fritas', 'S/ 10.00'),
-      item('Patitas broaster', 'S/ 12.00'),
-      item('Lomo saltado', 'S/ 14.00'),
-      item('Tallarin saltado', 'S/ 12.00'),
+      item('Caldo de gallina', 'S/ 10.00', undefined, '/caldo-de-gallina.webp'),
+      item('Salchipapas simple', 'S/ 7.00', undefined, '/salchipapas-simple.webp'),
+      item('Salchipapas especial', 'S/ 10.00', undefined, '/salchipapas-especial.webp'),
+      item('Menudencia a la parrilla', 'S/ 12.00', undefined, '/menudencia-parrilla.webp', true),
+      item('Patitas fritas', 'S/ 10.00', undefined, '/patitas-fritas.webp', true),
+      item('Patitas broaster', 'S/ 12.00', undefined, '/patitas-broaster.webp', true),
+      item('Lomo saltado', 'S/ 14.00', undefined, '/lomo-saltado.webp'),
+      item('Tallarin saltado', 'S/ 12.00', undefined, '/tallarin-saltado.webp'),
     ],
   },
   {
